@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to Intent FreeDomain...</title>
+    <meta http-equiv="refresh" content="2; url=https://int.yt/">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-overlay: rgba(7, 18, 38, 0.7);
+            --accent-blue: #3b82f6;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(var(--bg-overlay), var(--bg-overlay)), 
+                        url(https://int.yt/photo-1501785888041-af3ef285b470.jpeg) no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+        .loader-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .logo {
+            width: 60px;
+            height: 60px;
+            background: var(--accent-blue);
+            border-radius: 12px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.5rem;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+        }
+        h1 { font-size: 1.2rem; margin: 10px 0; }
+        p { opacity: 0.7; font-size: 0.9rem; }
+        .spinner {
+            width: 30px;
+            height: 30px;
+            border: 3px solid rgba(255,255,255,0.1);
+            border-top: 3px solid var(--accent-blue);
+            border-radius: 50%;
+            margin: 20px auto 0;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        a { color: var(--accent-blue); text-decoration: none; font-size: 0.8rem; margin-top: 15px; display: block; }
+    </style>
+</head>
+<body>
+
+    <div class="loader-box">
+        <div class="logo">IF</div>
+        <h1>Moving to Intent</h1>
+        <p>Connecting you to int.yt...</p>
+        <div class="spinner"></div>
+        <a href="https://int.yt/">Click here if not redirected</a>
+    </div>
+
+    <script>
+        // Fallback JavaScript redirect
+        setTimeout(function(){
+            window.location.href = "https://int.yt/";
+        }, 2000);
+    </script>
+</body>
+</html>
